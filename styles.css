@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://picsum.photos/1280/720') no-repeat center bottom;
+    background-size: cover;
+    background-color: #000;
+    
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.form-container, .tasks-container {
+    flex: 1;
+    padding: 20px;
+    min-width: 300px;
+}
+
+.form-container {
+    border-right: 1px solid #ddd;
+}
+
+form h2, .tasks-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none; 
+    border-bottom: 2px solid #ddd; 
+    border-radius: 0;
+    background-color: transparent;
+    color: #333;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-bottom: 2px solid #5cb85c;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5cb85c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+.tasks-container ul {
+    list-style: none;
+}
+
+.tasks-container ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff50;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.tasks-container ul li button {
+    width: 10%;
+    background-color: #d9534f;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.tasks-container ul li button:hover {
+    background-color: #c9302c;
+}
